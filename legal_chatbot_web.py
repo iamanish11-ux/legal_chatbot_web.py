@@ -8,6 +8,10 @@ st.title("Legal Chatbot")
 st.subheader("Created by Anish LS. Tamang – Your Legal AI Assistant")
 st.write("Ask me about landmark judgments, constitutional provisions, cyber and IT laws, or criminal sections. Type 'exit' to quit.")
 
+# Button to show creator information
+if st.button("About Creator"):
+    st.info("Created by Anish LS. Tamang, an Advocate and AI enthusiast.")
+
 # Dictionary of cases, articles, sections
 responses = {
     # Constitutional landmark cases
@@ -44,7 +48,7 @@ def chatbot_response(user_input):
     return responses.get(user_input, "Sorry, I have no information on that. Try another query.")
 
 # Streamlit input/output
-user_input = st.text_input("You:")
+user_input = st.text_input("You:", "")
 if user_input:
     response = chatbot_response(user_input)
     st.text("Bot: " + response)
