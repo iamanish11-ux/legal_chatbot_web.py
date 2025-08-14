@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 # legal_chatbot_web.py
 # Legal Chatbot
 # Created by Anish LS. Tamang – Your Legal AI Assistant
@@ -105,4 +105,4 @@ if user_input:
 # About Creator button
 if st.button("About Creator"):
     st.info("This Legal Chatbot was created by Anish LS. Tamang, an advocate and AI enthusiast.")
->>>>>>> bffa2abae5e99547557e91d98ebcc300a4f8145c
+ bffa2abae5e99547557e91d98ebcc300a4f8145c
